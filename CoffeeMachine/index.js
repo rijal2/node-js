@@ -11,7 +11,7 @@ console.log("Kopi Anda sudah siap!");
 */
 
 /* 
-TUTORIAL EXPORT & IMPORT
+TUTORIAL EXPORT & IMPORT dengan Format Common Js
 file index.js ini adalah berkas yg akan kita gunakan untuk meng-IMPORT nilai dari berkas yang lain, dalam hal ini adalah state.js.
 
 1. CARA MENGIMPORT SEBUAH NILAI dari SEBUAH BERKAS.
@@ -49,5 +49,13 @@ Selanjutnya kita bisa memanggil nilai tersebut untuk kita gunakan pada modul(ber
 
         console.log(coffeeStock);
         console.log(mesinKopiSiap);
+
+*/
+
+/* 
+TUTORIAL EXPORT & IMPORT dengan module ES6
+CARA MENGIMPORT NILAI dari SEBUAH BERKAS pada module ES6 sama dengan COMMON JS, hanya saja metode importnya diganti seperti ini:
+
+        import coffeeStock from './state.js';
 
 */
