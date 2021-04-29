@@ -4,7 +4,7 @@ const coffeeStock = {
     liberica: 200
 };
  
-module.exports = {coffeeStock, isCoffeeMachineReady}; 
+module.exports = coffeeStock; 
 
 //cara memastikan bahwa module sudah berhasil diexport
-console.log(module);
+
