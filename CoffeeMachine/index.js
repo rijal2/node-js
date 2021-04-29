@@ -10,23 +10,32 @@ console.log("Kopi Anda sudah siap!");
 
 */
 
-/* cara mengimport module yang sudah diexport oleh state.js
-1. Tuliskan kode berikut:
+/* 
+TUTORIAL EXPORT & IMPORT
+file index.js ini adalah berkas yg akan kita gunakan untuk meng-IMPORT nilai dari berkas yang lain, dalam hal ini adalah state.js.
+
+1. CARA MENGIMPORT SEBUAH NILAI dari SEBUAH BERKAS.
+
+a. Tuliskan kode berikut:
 const coffeeStock = require('./state');
 
-2. Kemudian deklarasikan perintah. Contoh perintah paling sederhana adalah menampilkan tulisan yang ada dalam variable cofeeStock. Seperti pada kode di bawah ini:
-console.log(coffeeStock)
+b. Kemudian deklarasikan perintah.
+- Contoh perintah paling sederhana adalah menampilkan tulisan yang ada dalam variable cofeeStock.
+Seperti pada kode di bawah ini:
+
+        console.log(coffeeStock);
+
+- Atau gunakan perintah yang lebih kompleks, seperti pada kode berikut ini
+
+        const makeCofee = (type,miligrams) => {
+            if (coffeeStock[type] >= miligrams) {
+                console.log("Bagus! Kopi berhasil dibuat");
+            } else {
+                console.log("Maaf! Biji kopi habis");
+            }
+        }
+
+        makeCofee("robusta",80);
 
 */
 
-const coffeeStock = require('./state');
-
-const makeCofee = (type,miligrams) => {
-    if (coffeeStock[type] >= miligrams) {
-        console.log("Bagus! Kopi berhasil dibuat");
-    } else {
-        console.log("Maaf! Biji kopi habis");
-    }
-}
-
-makeCofee("robusta",80);
