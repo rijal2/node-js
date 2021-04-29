@@ -16,14 +16,25 @@ module.exports = coffeeStock;
 
 
 2. CARA MENGEXPORT BEBERAPA NILAI yang ada didalam SEBUAH BERKAS.
+
+Misal pada sebuah berkas (state.js) terdapat dua buah nilai yaitu coffeStock dan mesinKopiSiap,
+
+        const coffeeStock = {
+            arabica: 100,
+            robusta: 150,
+            liberica: 200,
+        };
+
+        const mesinKopiSiap = true;
+
+Untuk mengeksport kedua nilai tersebut, kita tidak bisa menggunakan metode seperti mengexport sebuah nilai saja
+        module.exports = coffeeStock;
+        module.exports = mesinKopiSiap;
+
+Baris kode kedua berarti kita menginisialisasikan ulang nilai properti module.exports,
+sehingga nilai yang di-export hanya variabel mesinKopiSiap.
+
+Solusinya kita bisa memanfaatkan object literals "{}" seperti pada kode berikut ini:
+        module.exports = {coffeeStock,mesinKopiSiap};
+
 */
-
-const coffeeStock = {
-    arabica: 100,
-    robusta: 150,
-    liberica: 200,
-};
-
-const mesinKopiSiap = true;
-
-module.exports = {coffeeStock,mesinKopiSiap};

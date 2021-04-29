@@ -37,5 +37,17 @@ Seperti pada kode di bawah ini:
 
         makeCofee("robusta",80);
 
-*/
 
+
+2. CARA MENGIMPORT beberapa NILAI dari SEBUAH BERKAS.
+Kita bisa menggunakan model destructing object, seperti pada kode di bawah ini:
+
+        const {coffeeStock, mesinKopiSiap} = require ('./state');
+
+Dengan memasukkan kode di atas kita sudah berhasil mengimport nilai coffeeStock dan mesinKopiSiap dari berkas state.js.
+Selanjutnya kita bisa memanggil nilai tersebut untuk kita gunakan pada modul(berkas) ini. Contoh penggunaan nilai tersebut untuk sebuah perintah sederhana,
+
+        console.log(coffeeStock);
+        console.log(mesinKopiSiap);
+
+*/
